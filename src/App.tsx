@@ -9,8 +9,7 @@ import Cards from'./Component/Cards'
 
 function App() {
   const [height, changeHeight] = useState("300px");
-  if(localStorage['myKey']==null){
-    localStorage['myKey'] = '1'};
+  localStorage['myKey'] = '1';
   setInterval(intervalCheckHeight,1000);
   function intervalCheckHeight(){
     if(document.getElementsByClassName("card").length>1){

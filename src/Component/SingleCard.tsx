@@ -16,7 +16,7 @@ function CardSingle(props:any) {
                     marginTop: "3%"
                 }}>
     <Card.Body style={{ display: "" }}>
-        <Card.Title>{{date}}</Card.Title>
+        <Card.Title>{date}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{title}</Card.Subtitle>
         <Card.Text>
           {detail}

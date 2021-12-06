@@ -11,4 +11,5 @@ export default function SingleButton(){
 }
 function click_store(){
     Store.dispatch({type:'counter/incremented'});
+    console.log(Store.getState().value)
 }

@@ -16,13 +16,11 @@
     return new Promise((resolve,reject)=>{
         doSomething.then((res)=>{
             const type = res.headers.get('Content-Type');
-            console.log( typeof type );
             if((type || '').indexOf('json')!=-1){
                 return res.json();
             }
             return res.text();
         }).then((results)=>{
-            console.log(JSON.stringify(results));
             resolve(results)
         }).catch((error)=>{
             reject(error);
