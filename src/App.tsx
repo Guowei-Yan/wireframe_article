@@ -1,14 +1,10 @@
-import { stringify } from 'querystring';
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './App.css';
-import CardSingle from './Component/SingleCard'
-import Store from './expand/StoreRedux'
-import {Get} from'./expand/HiNet'
 import SingleButton from './Component/Button';
 import Cards from'./Component/Cards'
 
 function App() {
-  const [height, changeHeight] = useState("300px");
+  const [height, changeHeight] = useState("300px"); // this hook used default value and then use interval to regularly update the height for the frame
   let max_top = 0;
   let max_height = 0;
   function heightCheck() {

@@ -1,7 +1,7 @@
 import React,{Component,useState,useEffect} from "react";
 import { Card } from 'react-bootstrap';
 import Store from '../expand/StoreRedux';
-import Button from './cardButton';
+import SingleButton from './cardButton';
 function CardSingle(props:any) {
   const { date, title, detail, link, ids } = props;
   const [colour, setColour] = useState('gainsboro')
@@ -23,7 +23,7 @@ function CardSingle(props:any) {
         <Card.Text>
           {detail}
         </Card.Text>
-        <Button link={link}/>
+        <SingleButton linkOne= { link } />
     </Card.Body>
     </Card>
   );
