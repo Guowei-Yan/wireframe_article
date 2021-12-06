@@ -5,6 +5,7 @@ import Store from '../expand/StoreRedux';
 
 function Cards(props:any){
     var indents= [];
+    
     const [limits, changeLimits] = useState(6);
     function checkLimits(){
         let kk = Store.getState().value;
