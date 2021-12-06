@@ -31,7 +31,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `Known Bugs for now`
 
 The fifth version has know bugs:
-* The cards in same line still can't align
+* The cards in same line don't align because I have not created cards lines div yet. It will be fixed shortly.
 * It's flashing since I used setInverval and redux store to check how many cards should have 
 
 ### `Update`
