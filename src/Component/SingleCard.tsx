@@ -3,9 +3,9 @@ import { Card } from 'react-bootstrap';
 import Store from '../expand/StoreRedux';
 import { Button } from 'react-bootstrap';
 function CardSingle(props:any) {
-  const { date, title, detail, link } = props;
+  const { date, title, detail, link, ids } = props;
   return (
-    <Card style={{ width: '18rem',
+    <Card key={ids} style={{ width: '18rem',
                     borderStyle: 'solid',
                     borderWidth:"0.1px",
                     backgroundColor:"gainsboro",
@@ -13,7 +13,7 @@ function CardSingle(props:any) {
                     flexDirection: "row",
                     paddingBlock: "10",
                     marginLeft:"7%",
-                    marginTop: "3%"
+                    marginTop: "3%",
                 }}>
     <Card.Body style={{ display: "" }}>
         <Card.Title>{date}</Card.Title>

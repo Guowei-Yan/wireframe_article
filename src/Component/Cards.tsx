@@ -5,7 +5,12 @@ import Store from '../expand/StoreRedux';
 
 function Cards(props:any){
     var indents= [];
-    let limits = Store.getState().value;
+    const [limits, changeLimits] = useState(6);
+    function checkLimits(){
+        let kk = Store.getState().value;
+        changeLimits(kk);
+    }
+    setInterval(checkLimits,1000)
     const [article, changArticle] = useState('');
     const doFetch=()=>{
         Get("https://api.spaceflightnewsapi.net/v3/articles")({ _limit : limits })
@@ -29,6 +34,7 @@ function Cards(props:any){
                             title = {a[i]["title"]}
                             detail = {a[i]["summary"]}
                             link = {a[i]["url"]}
+                            ids = {"card"+String(i)}
                         />);
         };
 
