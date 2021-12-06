@@ -2,7 +2,7 @@ import { Button } from 'react-bootstrap';
 import Store from '../expand/StoreRedux';
 export default function SingleButton(){
     return(
-        <div>
+        <div style={{paddingBottom:'50px'}}>
             <Button variant="secondary" size="lg" active onClick={click_store}>
                 MORE
             </Button>
