@@ -6,6 +6,10 @@ This project is for Front-end Technical test from Guowei Yan. The project is cre
 
 In the project directory, you can run:
 
+### `npm install`
+
+This will help users install all modules required
+
 ### `npm start`
 
 Runs the app in the development mode.\
