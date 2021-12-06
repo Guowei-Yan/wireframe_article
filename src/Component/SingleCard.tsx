@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import Store from './StoreRedux'
+import Store from '../expand/StoreRedux';
 function CardSingle() {
   return (
     <Card style={{ width: '18rem',
