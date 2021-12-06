@@ -1,6 +1,6 @@
 # Introduction
 
-This project is for Front-end Technical test from Guowei Yan. The project is created based on React-App.
+This project is for Front-end Technical test from Guowei Yan. The project is created based on React-App. In this project, I have used Typescript, React and Bootstrap as required. Thanks for your time and I will continue update this project.
 
 ## Available Scripts
 
