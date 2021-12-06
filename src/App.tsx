@@ -5,23 +5,22 @@ import CardSingle from './Component/SingleCard'
 import Store from './expand/StoreRedux'
 import {Get} from'./expand/HiNet'
 import SingleButton from './Component/Button';
+import Cards from'./Component/Cards'
 
 function App() {
-  const [article, changeArticle] = useState({});
   const [height, changeHeight] = useState("300px");
-  setInterval(intervalCheckHeight,5000);
+  if(localStorage['myKey']==null){
+    localStorage['myKey'] = '1'};
+  setInterval(intervalCheckHeight,1000);
   function intervalCheckHeight(){
     if(document.getElementsByClassName("card").length>1){
       let last_card = document.getElementsByClassName("card")[document.getElementsByClassName("card").length-1];
-      last_card.setAttribute("id","last_card");
-      let tmp: any = document.querySelector('[id=last_card');
-      let offset_top = tmp.offsetTop;
-      changeHeight(offset_top+tmp.offsetHeight)
+      // last_card.setAttribute("id","last_card");
+      // let tmp: any = document.querySelector('.last_card');
+      // let offset_top = tmp.offsetTop;
+      changeHeight(height+last_card.clientTop);
     }
   };
-  // Get("https://api.spaceflightnewsapi.net/v3/articles")({ _limit : '50' })
-  //   .then(results => {changeArticle(JSON.parse(JSON.stringify(results)))})
-  // console.log(article)
   return (
     <div className="App">
       <header className="Aoo-header">
@@ -32,12 +31,7 @@ function App() {
                                       margin: "auto",
                                       boxSizing:"border-box",
                                       paddingTop: "5%" }}>
-        <CardSingle/>
-        <CardSingle/>
-        <CardSingle/>
-        <CardSingle/>
-        <CardSingle/>
-        <CardSingle/>
+        <Cards/>
       </div>
       <SingleButton/> 
     </div>
