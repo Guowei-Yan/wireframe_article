@@ -34,14 +34,14 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `Known Bugs for now`
+## Known Bugs for now
 
 The fifth version has know bugs:
 * The cards in same line don't align because I have not created cards lines div yet. It will be fixed shortly.
 * It's flashing since I used setInverval and redux store to check how many cards should have 
 * Comments are not complete cause the optimization is still in the progress
 
-### `Update`
+## Update
 
 This repo will be updated regularly. Very welcome for any comments and bugs reporting.
 
