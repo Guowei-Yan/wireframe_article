@@ -4,8 +4,8 @@ This project is for Front-end Technical test from Guowei Yan. The project is cre
 
 ## Life Cycle
 
-**Start Date:** 06/12/2021
-**Functionalities completion Date:** 06/12/2021
+**Start Date:** 06/12/2021 <br/>
+**Functionalities completion Date:** 06/12/2021 <br/>
 **Proposed Maintainance End Date:**  12/12/2021
 
 ## Available Scripts
