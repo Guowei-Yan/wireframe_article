@@ -2,6 +2,12 @@
 
 This project is for Front-end Technical test from Guowei Yan. The project is created based on React-App. In this project, I have used Typescript, React and Bootstrap as required. Thanks for your time and I will continue update this project.
 
+## Life Cycle
+
+**Start Date:** 06/12/2021
+**Functionalities completion Date:** 06/12/2021
+**Proposed Maintainance End Date:**  12/12/2021
+
 ## Available Scripts
 
 In the project directory, you can run:
