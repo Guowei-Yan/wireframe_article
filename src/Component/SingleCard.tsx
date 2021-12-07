@@ -17,7 +17,7 @@ function CardSingle(props:any) {
                     marginTop: "3%",
                 }} onMouseEnter={() => setColour("green")}
                    onMouseLeave={() => setColour("gainsboro")}>
-    <Card.Body style={{ display: "" }}>
+    <Card.Body style={{}}>
         <Card.Title style={{fontSize:"x-small", inlineSize:"fit-content", left:"0px"}}>{date}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted" style={{fontWeight: 'bold'}}>{title}</Card.Subtitle>
         <Card.Text>

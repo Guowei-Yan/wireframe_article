@@ -5,9 +5,9 @@ import Cards from'./Component/Cards'
 
 function App() {
   const [height, changeHeight] = useState("300px"); // this hook used default value and then use interval to regularly update the height for the frame
-  let max_top = 0;
-  let max_height = 0;
   function heightCheck() {
+    let max_top = 0;
+    let max_height = 0;
     if(document.getElementsByClassName("card").length>0){
       for(let i=0;i<document.getElementsByClassName("card").length;i++){
         let thisCard = document.getElementsByClassName("card")[i];

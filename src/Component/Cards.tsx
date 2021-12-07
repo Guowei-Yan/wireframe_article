@@ -5,7 +5,6 @@ import Store from '../expand/StoreRedux';
 
 function Cards(props:any){
     var indents= [];
-    
     const [limits, changeLimits] = useState(6);
     function checkLimits(){
         let kk = Store.getState().value;
@@ -25,6 +24,7 @@ function Cards(props:any){
         doFetch();
     };
     if(Object.keys(article).length>=6){
+ 
 
         let a = JSON.parse(article);
         for(let i = 0; i<a.length;i++){
@@ -38,9 +38,10 @@ function Cards(props:any){
                             ids = {"card"+String(i)}
                         />);
         };
+        console.log(indents)
 
     }else{console.log("no")}
 
-    return(<div>{indents}</div>)
+    return(<div style={{position:'inherit', display: 'block',}}>{indents}</div>)
 }
 export default Cards;
