@@ -6,7 +6,7 @@ This project is for Front-end Technical test from Guowei Yan. The project is cre
 
 **Start Date:** 06/12/2021 <br/>
 **Functionalities completion Date:** 06/12/2021 <br/>
-**Proposed Maintainance End Date:**  12/12/2021
+**Proposed Maintainance End Date:**  30/12/2021
 
 ## Available Scripts
 
